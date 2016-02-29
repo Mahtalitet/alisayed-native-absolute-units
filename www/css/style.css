@@ -116,6 +116,15 @@ header aside, header section, #main .services, #main .posts {
     width: 100%;
     float:left;
     background-color: #1e92af;
+    color: #fff;
+}
+
+#main .services .color {
+    padding: 70px 88px 70px 58px;
+}
+
+#main .services .service:not(:first-child) h2{
+    margin-top: 80px;
 }
 
 #main .posts {
@@ -142,7 +151,7 @@ header aside, header section, #main .services, #main .posts {
     margin-top: 56px;
 }
 
-#main .posts section p{
+#main p{
     margin-top: 24px;
 }
 
