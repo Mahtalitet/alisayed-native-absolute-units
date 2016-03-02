@@ -102,7 +102,7 @@ header section p+p {
     margin-top: 28px;
 }
 
-header aside, header section, #main .services, #main .posts {
+header aside, header section, #main .services, #main .services .color, #main .posts {
     padding-bottom: 99999px;
     margin-bottom: -99999px;
 }
@@ -112,18 +112,26 @@ header aside, header section, #main .services, #main .posts {
     overflow: hidden;    
 }
 
+#main p{
+    margin-top: 24px;
+}
+
 #main .services {
     width: 100%;
     float:left;
-    background-color: #1e92af;
     color: #fff;
+    background: url(../imgs/services-img.jpg) no-repeat 0 0;
 }
 
 #main .services .color {
-    padding: 70px 88px 70px 58px;
+    padding-top: 70px;
+    padding-right: 88px;
+    padding-left: 58px;
+    background-color: rgba(30,146,175,0.75);
 }
 
-#main .services .service:not(:first-child) h2{
+
+#main .services .service:not(:first-child){
     margin-top: 80px;
 }
 
@@ -151,9 +159,7 @@ header aside, header section, #main .services, #main .posts {
     margin-top: 56px;
 }
 
-#main p{
-    margin-top: 24px;
-}
+
 
 #main .posts section:nth-child(odd) {
     background: url(../imgs/img-post-2.jpg) no-repeat;
