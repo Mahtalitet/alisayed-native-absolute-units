@@ -102,13 +102,12 @@ header section p+p {
     margin-top: 28px;
 }
 
-header aside, header section, #main .services, #main .services .color, #main .posts {
+header aside, header section {
     padding-bottom: 99999px;
     margin-bottom: -99999px;
 }
 
 #main {
-    padding-right: 752px;
     overflow: hidden;    
 }
 
@@ -116,18 +115,41 @@ header aside, header section, #main .services, #main .services .color, #main .po
     margin-top: 24px;
 }
 
-#main .services {
-    width: 100%;
-    float:left;
-    color: #fff;
-    background: url(../imgs/services-img.jpg) no-repeat 0 0;
+.table {
+    display: table;
 }
 
-#main .services .color {
+.table-row {
+    display: table-row;
+
+}
+
+.table-col {
+    display: table-cell;
+}
+
+
+#main .services {
     padding-top: 70px;
     padding-right: 88px;
     padding-left: 58px;
-    background-color: rgba(30,146,175,0.75);
+    color: #fff;
+    background: 
+        linear-gradient(0deg, rgba(30,146,175,0.75), rgba(30,146,175,0.75)),
+        url(../imgs/services-img.jpg) no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+}
+
+#main .services::after {
+    content: '';
+    display: block;
+    height: 70px;
+}
+
+
+#main .services .color {
+
 }
 
 
@@ -136,9 +158,7 @@ header aside, header section, #main .services, #main .services .color, #main .po
 }
 
 #main .posts {
-    max-width: 752px;
-    float: right;
-    margin-right: -752px;
+    width: 752px;
 }
 
 #main .posts .color {
