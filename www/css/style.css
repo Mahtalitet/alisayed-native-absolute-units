@@ -210,13 +210,28 @@ footer .table-col{
 }
 
 footer .copyrights {
-        background: 
+    position: relative;
+    background: 
          linear-gradient(0deg, rgba(29, 83, 103,0.75), rgba(29, 83, 103,0.75)),
-        url(../imgs/img-footer-1.jpg) no-repeat 0 0;
+         url(../imgs/img-footer-1.jpg) no-repeat 0 0;
 }
 
 footer .copyrights h2 {
     line-height: 65px;
+}
+
+footer .copyrights .author {
+    position: absolute;
+    bottom: 54px;
+    left: 48px;
+}
+
+footer .copyrights .author img {
+    margin-bottom: 34px;
+}
+
+footer .copyrights .author h3 {
+    margin-bottom: 16px;
 }
 
 footer .connect-form {
@@ -278,20 +293,17 @@ footer form .two-column .half-width:last-child input{
     float:right;
 }
 
-footer .connect-form .socials {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-footer .connect-form .socials li {
-    background-color: rgb(52, 91, 180);
+footer .connect-form .socials .social{
     width: 43px;
     height: 43px;
     float: left;
     border-radius: 7px;
     margin-right: 6px;
     position: relative;
+}
+
+footer .connect-form .socials .f {
+    background-color: rgb(52, 91, 180);
 }
 
 footer .connect-form .socials .d {
@@ -302,7 +314,8 @@ footer .connect-form .socials .t {
     background-color: #00b4ff;
 }
 
-footer .connect-form .socials li a{
+footer .connect-form .socials a::before {
+    content: '';
     display: block;
     position: absolute;
     top: 50%;
@@ -313,19 +326,13 @@ footer .connect-form .socials li a{
     height: 25px;
     background-repeat: no-repeat;
     background-image: url(../imgs/social-sprites.png);
-}
-
-footer .connect-form .socials .f a {
     background-position: -5px -5px;
 }
 
-footer .connect-form .socials .d a{
+footer .connect-form .socials .f::before {
     background-position: -40px -5px;
-}
+} 
 
-footer .connect-form .socials .t a {
+footer .connect-form .socials .t::before {
     background-position: -75px -5px;
-}
-
-
-
+} 
