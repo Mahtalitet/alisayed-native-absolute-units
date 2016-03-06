@@ -139,10 +139,23 @@ header aside, header section {
     padding-right: 88px;
     padding-left: 58px;
     color: #fff;
-    background-color: rgb(30,146,175);
+    background: #1e92af;
+    background: 
+        -moz-linear-gradient(0deg, rgba(30,146,175,0.75), rgba(30,146,175,0.75)),
+        url(../imgs/services-img.jpg) no-repeat 0 0;
+    background: 
+       -webkit-linear-gradient(0deg, rgba(30,146,175,0.75), rgba(30,146,175,0.75)),
+        url(../imgs/services-img.jpg) no-repeat 0 0;
+    background: 
+       -o-linear-gradient(0deg, rgba(30,146,175,0.75), rgba(30,146,175,0.75)),
+        url(../imgs/services-img.jpg) no-repeat 0 0;
+    background: 
+       -ms-linear-gradient(0deg, rgba(30,146,175,0.75), rgba(30,146,175,0.75)),
+        url(../imgs/services-img.jpg) no-repeat 0 0;
     background: 
         linear-gradient(0deg, rgba(30,146,175,0.75), rgba(30,146,175,0.75)),
         url(../imgs/services-img.jpg) no-repeat 0 0;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#1e92af', endColorstr='#1e92af');
     background-size: cover;
     position: relative;
 }
@@ -181,16 +194,16 @@ header aside, header section {
 }
 
 #main .posts section:nth-child(odd) {
-    background: url(../imgs/img-post-2.jpg) no-repeat;
+    background: #fff4d2 url(../imgs/img-post-2.jpg) no-repeat;
     background-size: cover;
 }
 
 #main .posts section:nth-child(odd) .color {
-    background-color: rgba(255,244,210, 0.93);
+    background-color: rgba(255,244,210, 0.9);
 }
 
 #main .posts section:nth-child(even) {
-    background: url(../imgs/img-post-1.jpg) no-repeat;
+    background: #162633 url(../imgs/img-post-1.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -215,6 +228,7 @@ footer .copyrights {
     background: 
          linear-gradient(0deg, rgba(29, 83, 103,0.75), rgba(29, 83, 103,0.75)),
          url(../imgs/img-footer-1.jpg) no-repeat 0 0;
+    background-size: cover;
 }
 
 footer .copyrights h2 {
@@ -242,6 +256,7 @@ footer .connect-form {
     background: 
          linear-gradient(0deg, rgba(90, 102, 95,0.5), rgba(90, 102, 95,0.5)),
         url(../imgs/img-footer-2.jpg) no-repeat 0 0;
+    background-size: cover;
 }
 
 footer .connect-form h2 {
@@ -265,13 +280,18 @@ footer form textarea, footer form input {
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 13px;
-    color: #fff;
-    opacity: 1 !important;
     font-family: 'Roboto Regular', sans-serif;
     font-size: 16px;
     padding:  20px 15px;
     box-sizing: border-box;
+    color: #fff;
+    opacity: 1 !important;
 }
+
+footer form textarea::-moz-placeholder, footer form input::-moz-placeholder {color: #fff; opacity: 1; }
+footer form textarea:-moz-placeholder, footer form input:-moz-placeholder {color: #fff; opacity: 1;}
+footer form textarea::-webkit-input-placeholder, footer form input::-webkit-input-placeholder { color: #fff; opacity: 1;}
+footer form textarea:-ms-input-placeholder, footer form input:-ms-input-placeholder { color: #fff; opacity: 1;}
 
 footer form input{
     max-height: 59px;
@@ -304,7 +324,7 @@ footer .connect-form .socials .social{
 }
 
 footer .connect-form .socials .f {
-    background-color: rgb(52, 91, 180);
+    background-color: #345bb4;
 }
 
 footer .connect-form .socials .d {
@@ -315,7 +335,7 @@ footer .connect-form .socials .t {
     background-color: #00b4ff;
 }
 
-footer .connect-form .socials a::before {
+footer .connect-form .socials .social::before {
     content: '';
     display: block;
     position: absolute;

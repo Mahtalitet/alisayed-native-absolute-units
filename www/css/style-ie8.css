@@ -1,3 +1,11 @@
+#main .posts section:nth-child(odd) .color {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#e6fff4d2', endColorstr='#e6fff4d2'); 
+}
+
+#main .posts section:nth-child(even) .color{
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#bf162633', endColorstr='#bf162633');
+}
+
 footer .connect-form .socials a:before {
     content: '';
     display: block;
